@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Grading App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-md space-y-4">
+    <h2 class="text-xl font-bold text-center">Student Grading System</h2>
+
+    <input id="name" type="text" placeholder="Student Name" class="w-full border px-4 py-2 rounded" />
+    <input id="subject" type="text" placeholder="Subject" class="w-full border px-4 py-2 rounded" />
+    <input id="marks" type="number" placeholder="Marks (out of 100)" class="w-full border px-4 py-2 rounded" />
+
+    <button onclick="submitForm()" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Submit</button>
+    <button onclick="clearAll()" class="w-full bg-red-500 text-white py-2 rounded hover:bg-red-600">Clear All</button>
+
+    <div id="result" class="text-center font-semibold mt-4"></div>
+    <div id="count" class="text-center mt-2 text-gray-600"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
